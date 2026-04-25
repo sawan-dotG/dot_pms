@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-25 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "topic",
+  "discussed",
+  "action_item",
+  "carried_over"
+ ],
+ "fields": [
+  {
+   "fieldname": "topic",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Topic",
+   "reqd": 1
+  },
+  {
+   "fieldname": "discussed",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Discussed"
+  },
+  {
+   "fieldname": "action_item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Action Item"
+  },
+  {
+   "fieldname": "carried_over",
+   "fieldtype": "Check",
+   "label": "Carried Over"
+  }
+ ],
+ "links": [],
+ "modified": "2026-04-25 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "dot Permformance Management System",
+ "name": "PMS 1-on-1 Agenda",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "custom": 0,
+ "is_submittable": 0,
+ "istable": 1,
+ "autoname": "autoincrement"
+}

@@ -149,23 +149,11 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"dot_pms.tasks.all"
-# 	],
-# 	"daily": [
-# 		"dot_pms.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"dot_pms.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"dot_pms.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"dot_pms.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"daily": [
+		"dot_pms.dot_permformance_management_system.nudge_engine.send_nudge"
+	]
+}
 
 # Testing
 # -------

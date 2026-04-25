@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-25 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "cycle",
+  "manager",
+  "performance_score",
+  "potential_score",
+  "final_rating",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cycle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Appraisal Cycle",
+   "options": "PMS Appraisal Cycle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Manager",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "description": "Calculated from OKRs and Feedback",
+   "fieldname": "performance_score",
+   "fieldtype": "Float",
+   "label": "Performance Score (X-axis)"
+  },
+  {
+   "description": "Manager's rating for the 9-box grid",
+   "fieldname": "potential_score",
+   "fieldtype": "Float",
+   "label": "Potential Score (Y-axis)"
+  },
+  {
+   "fieldname": "final_rating",
+   "fieldtype": "Select",
+   "label": "Final Rating",
+   "options": "1 - Needs Improvement\n2 - Meets Expectations\n3 - Exceeds Expectations"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nManager Review\nHR Review\nFinalized"
+  }
+ ],
+ "links": [],
+ "modified": "2026-04-25 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "dot Permformance Management System",
+ "name": "PMS Appraisal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "cancel": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "custom": 0,
+ "is_submittable": 1,
+ "istable": 0,
+ "autoname": "format:APP-{####}"
+}

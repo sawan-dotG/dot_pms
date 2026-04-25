@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-25 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "competency_name",
+  "category",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "competency_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Competency Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Technical\nSoft Skill\nLeadership"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  }
+ ],
+ "links": [],
+ "modified": "2026-04-25 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "dot Permformance Management System",
+ "name": "PMS Competency",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "custom": 0,
+ "is_submittable": 0,
+ "istable": 0,
+ "autoname": "format:COMP-{####}"
+}
